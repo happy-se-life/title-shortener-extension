@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Title Shortener",
+    "version": "1.0",
+    "description": "Shortens the web page title for specified domains.",
+    "permissions": [
+      "storage"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "options_page": "options.html"
+  }
